@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container card">
+<section class="left">
+<h2>Welcome to NUEL Bank</h2>
+<p>NUEL Bank — a reliable partner for your financial growth. Open accounts, transfer funds, pay bills and manage your finances securely.</p>
+<h3>Quick Services</h3>
+<ul>
+<li>Savings & Current Accounts</li>
+<li>Money Transfer (Mock)</li>
+<li>Bill Payments</li>
+<li>Loan Enquiries</li>
+</ul>
+</section>
+
+
+<section class="right">
+<h3>Login</h3>
+<form id="loginForm">
+<label>Email</label>
+<input name="email" type="email" required />
+<label>Password</label>
+<input name="password" type="password" required />
+<button type="submit">Login</button>
+</form>
+
+
+<h4>New? Register</h4>
+<form id="registerForm">
+<input name="name" placeholder="Full name" required />
+<input name="email" type="email" required />
+<input name="password" type="password" required />
+<button type="submit">Register</button>
+</form>
+</section>
+</div>
+{% endblock %}
