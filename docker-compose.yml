@@ -36,8 +36,11 @@ services:
       ME_CONFIG_MONGODB_PORT: 27017
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: adminpassword
+<<<<<<< HEAD
       ME_CONFIG_BASICAUTH_USERNAME: nuel
       ME_CONFIG_BASICAUTH_PASSWORD: bank123
+=======
+>>>>>>> e7efddb1d22f2c716d0ee4040db22c3f19f86003
     depends_on:
       - mongo
 
