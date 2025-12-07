@@ -1,4 +1,3 @@
-
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
 from models import users, create_user, find_user_by_email
 from utils import hash_password, verify_password

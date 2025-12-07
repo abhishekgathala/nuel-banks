@@ -52,3 +52,16 @@
 
     <h2>👤 User Profile</h2>
 
+    <div class="profile-field"><span class="label">First Name:</span> {{ user.first_name }}</div>
+    <div class="profile-field"><span class="label">Last Name:</span> {{ user.last_name }}</div>
+    <div class="profile-field"><span class="label">Email:</span> {{ user.email }}</div>
+    <div class="profile-field"><span class="label">Mobile:</span> {{ user.mobile }}</div>
+    <div class="profile-field"><span class="label">Address:</span> {{ user.address }}</div>
+    <div class="profile-field"><span class="label">Status:</span> Active Customer</div>
+
+    <button class="btn btn-service" onclick="location.href='/services'">Services</button>
+    <button class="btn btn-logout" onclick="location.href='/logout'">Logout</button>
+
+</div>
+
+{% endblock %}

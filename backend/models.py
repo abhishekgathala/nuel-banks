@@ -1,4 +1,3 @@
-
 from pymongo import MongoClient
 from config import MONGO_URI
 
@@ -23,4 +22,3 @@ return users.find_one({'email': email})
 
 def get_user_by_id(uid):
 return users.find_one({'_id': uid})
-
