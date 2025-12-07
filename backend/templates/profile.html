@@ -1,26 +1,54 @@
-<<<<<<< HEAD
 {% extends "base.html" %}
+
 {% block content %}
 
-<h2>User Profile</h2>
+<style>
+    .profile-box {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
 
-<p><strong>Name:</strong> Registered User</p>
-<p><strong>Email:</strong> user@nuelbank.com</p>
-<p><strong>Status:</strong> Active Customer</p>
+    .profile-box h2 {
+        text-align: center;
+        color: #1e3c72;
+        margin-bottom: 20px;
+    }
 
-{% endblock %}
-=======
-{% extends 'base.html' %}
-{% block content %}
-<div class="container card">
-<h2>Profile</h2>
-{% if user %}
-<p><strong>Name:</strong> {{ user.name }}</p>
-<p><strong>Email:</strong> {{ user.email }}</p>
-<p><strong>Balance:</strong> ₹{{ user.balance }}</p>
-{% else %}
-<p>No profile found. Please log in.</p>
-{% endif %}
-</div>
-{% endblock %
->>>>>>> e7efddb1d22f2c716d0ee4040db22c3f19f86003
+    .profile-field {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .btn-service {
+        background: #1e3c72;
+        color: white;
+    }
+
+    .btn-logout {
+        background: #d63031;
+        color: white;
+    }
+</style>
+
+<div class="profile-box">
+
+    <h2>👤 User Profile</h2>
+

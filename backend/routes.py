@@ -1,10 +1,11 @@
+
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
 from models import users, create_user, find_user_by_email
 from utils import hash_password, verify_password
 from bson.objectid import ObjectId
 
 
-bp = Blueprint('bp', name)
+bp = Blueprint('bp', _name_)
 
 
 @bp.route('/')
@@ -65,3 +66,4 @@ return jsonify({'ok': True})
 def api_logout():
 session.pop('user_id', None)
 return redirect(url_for('bp.home'))
+
