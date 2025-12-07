@@ -1,4 +1,3 @@
-
 version: '3.8'
 
 services:
@@ -10,7 +9,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGO_URI=mongodb://admin:adminpassword@mongo:27017/nuel_db?authSource=admin
+      - MONGO_URI=mongodb://admin:adminpassword@mongo:27017/nuelbank?authSource=admin
     depends_on:
       - mongo
 
@@ -37,9 +36,10 @@ services:
       ME_CONFIG_MONGODB_PORT: 27017
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: adminpassword
+      ME_CONFIG_BASICAUTH_USERNAME: nuel
+      ME_CONFIG_BASICAUTH_PASSWORD: bank123
     depends_on:
       - mongo
 
 volumes:
   mongo_data:
-
