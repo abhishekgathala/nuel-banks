@@ -10,4 +10,3 @@ COPY . .
 EXPOSE 5000
 
 CMD ["python", "app.py"]
-jenkins@ip-172-31-84-79:~/workspace/NUEL-BANK-APP/backend$
